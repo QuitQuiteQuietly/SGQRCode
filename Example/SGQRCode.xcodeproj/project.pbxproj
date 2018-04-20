@@ -22,6 +22,11 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		71ED4E5F2089909600A681AB /* QRCodeGenerateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED4E582089909600A681AB /* QRCodeGenerateVC.m */; };
+		71ED4E602089909600A681AB /* ScanSuccessJumpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED4E5A2089909600A681AB /* ScanSuccessJumpVC.m */; };
+		71ED4E612089909600A681AB /* WBQRCodeScanningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED4E5C2089909600A681AB /* WBQRCodeScanningVC.m */; };
+		71ED4E622089909600A681AB /* WCQRCodeScanningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED4E5E2089909600A681AB /* WCQRCodeScanningVC.m */; };
+		71ED4E67208991EE00A681AB /* SGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED4E65208991EE00A681AB /* SGWebView.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		CF271421C935B5D68880B2CE /* Pods_SGQRCode_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C39F8A500E6B9E541A4476 /* Pods_SGQRCode_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -40,7 +45,7 @@
 		00AE9626146A679D287DF543 /* Pods_SGQRCode_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGQRCode_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D603A5523A4D9EA466440DA /* Pods-SGQRCode_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGQRCode_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGQRCode_Example/Pods-SGQRCode_Example.release.xcconfig"; sourceTree = "<group>"; };
 		26EA88CC0B3666924B2AD081 /* Pods-SGQRCode_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGQRCode_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGQRCode_Tests/Pods-SGQRCode_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4ACFF5F4FBFFC54CA0B6F95F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4ACFF5F4FBFFC54CA0B6F95F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4C41F995450C360B2033CD00 /* Pods-SGQRCode_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGQRCode_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGQRCode_Tests/Pods-SGQRCode_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4E47D805F66B4FED9423AC7C /* Pods-SGQRCode_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGQRCode_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGQRCode_Example/Pods-SGQRCode_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SGQRCode_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGQRCode_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,9 +67,19 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		632DD42F1C26D389D94EFD92 /* SGQRCode.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SGQRCode.podspec; path = ../SGQRCode.podspec; sourceTree = "<group>"; };
-		6E30EDE053EC67C416B4C774 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		632DD42F1C26D389D94EFD92 /* SGQRCode.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SGQRCode.podspec; path = ../SGQRCode.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6E30EDE053EC67C416B4C774 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71ED4E572089909600A681AB /* WCQRCodeScanningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCQRCodeScanningVC.h; sourceTree = "<group>"; };
+		71ED4E582089909600A681AB /* QRCodeGenerateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerateVC.m; sourceTree = "<group>"; };
+		71ED4E592089909600A681AB /* QRCodeGenerateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerateVC.h; sourceTree = "<group>"; };
+		71ED4E5A2089909600A681AB /* ScanSuccessJumpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanSuccessJumpVC.m; sourceTree = "<group>"; };
+		71ED4E5B2089909600A681AB /* WBQRCodeScanningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBQRCodeScanningVC.h; sourceTree = "<group>"; };
+		71ED4E5C2089909600A681AB /* WBQRCodeScanningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBQRCodeScanningVC.m; sourceTree = "<group>"; };
+		71ED4E5D2089909600A681AB /* ScanSuccessJumpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanSuccessJumpVC.h; sourceTree = "<group>"; };
+		71ED4E5E2089909600A681AB /* WCQRCodeScanningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCQRCodeScanningVC.m; sourceTree = "<group>"; };
+		71ED4E65208991EE00A681AB /* SGWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGWebView.m; sourceTree = "<group>"; };
+		71ED4E66208991EE00A681AB /* SGWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGWebView.h; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96C39F8A500E6B9E541A4476 /* Pods_SGQRCode_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGQRCode_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,6 +147,7 @@
 		6003F593195388D20070C39A /* Example for SGQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				71ED4E63208990A100A681AB /* Controller */,
 				6003F59C195388D20070C39A /* SGAppDelegate.h */,
 				6003F59D195388D20070C39A /* SGAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -183,6 +199,31 @@
 				6E30EDE053EC67C416B4C774 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		71ED4E63208990A100A681AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				71ED4E64208991EE00A681AB /* View */,
+				71ED4E592089909600A681AB /* QRCodeGenerateVC.h */,
+				71ED4E582089909600A681AB /* QRCodeGenerateVC.m */,
+				71ED4E5D2089909600A681AB /* ScanSuccessJumpVC.h */,
+				71ED4E5A2089909600A681AB /* ScanSuccessJumpVC.m */,
+				71ED4E5B2089909600A681AB /* WBQRCodeScanningVC.h */,
+				71ED4E5C2089909600A681AB /* WBQRCodeScanningVC.m */,
+				71ED4E572089909600A681AB /* WCQRCodeScanningVC.h */,
+				71ED4E5E2089909600A681AB /* WCQRCodeScanningVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		71ED4E64208991EE00A681AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71ED4E65208991EE00A681AB /* SGWebView.m */,
+				71ED4E66208991EE00A681AB /* SGWebView.h */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B30B3DF46824D5823FDD5FF7 /* Pods */ = {
@@ -247,6 +288,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Ray;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = S7YAAK4XAE;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -355,9 +399,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71ED4E612089909600A681AB /* WBQRCodeScanningVC.m in Sources */,
+				71ED4E67208991EE00A681AB /* SGWebView.m in Sources */,
 				6003F59E195388D20070C39A /* SGAppDelegate.m in Sources */,
+				71ED4E602089909600A681AB /* ScanSuccessJumpVC.m in Sources */,
 				6003F5A7195388D20070C39A /* SGViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				71ED4E5F2089909600A681AB /* QRCodeGenerateVC.m in Sources */,
+				71ED4E622089909600A681AB /* WCQRCodeScanningVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,9 +534,11 @@
 			baseConfigurationReference = 4E47D805F66B4FED9423AC7C /* Pods-SGQRCode_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S7YAAK4XAE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGQRCode/SGQRCode-Prefix.pch";
 				INFOPLIST_FILE = "SGQRCode/SGQRCode-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,9 +551,11 @@
 			baseConfigurationReference = 1D603A5523A4D9EA466440DA /* Pods-SGQRCode_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S7YAAK4XAE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGQRCode/SGQRCode-Prefix.pch";
 				INFOPLIST_FILE = "SGQRCode/SGQRCode-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
