@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SGQRCode'
-  s.version          = '2.2.1'
+  s.version          = '2.2.2'
   s.summary          = 'A short description of SGQRCode.'
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'SGQRCode/**/*'
   
-  s.resource_bundles = {
-    'SGQRCode' => ['SGQRCode/Assets/*']
-  }
+  #s.resource_bundles = {
+  #   'SGQRCode' => ['SGQRCode/Assets/*']
+  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -51,11 +51,11 @@
     _backgroundAlpha = 0.5;
     _animationTimeInterval = 0.02;
     
-    UIImage *image = [UIImage imageNamed:@"QRCodeScanningLine"
-                             inBundle:[NSBundle bundleForClass:[self class]]
-        compatibleWithTraitCollection:nil];
+//    UIImage *image = [UIImage imageNamed:@"QRCodeScanningLine"
+//                             inBundle:[NSBundle bundleForClass:[self class]]
+//        compatibleWithTraitCollection:nil];
     
-    _scanningImageName = image;
+//    _scanningImageName = image;
 }
 
 - (UIView *)contentView {

@@ -154,16 +154,16 @@ static SGQRCodeScanManager *_instance;
 
 - (void)playSoundName:(NSString *)name {
     
-    NSBundle *f = [NSBundle bundleForClass:[self class]];
-    
-    NSString * path = [f pathForResource:@"sound" ofType:@"caf" inDirectory:@"SGQRCode.bundle"];
-    
-    NSURL *fileUrl = [NSURL fileURLWithPath:path];
-    
-    SystemSoundID soundID = 0;
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)(fileUrl), &soundID);
-    AudioServicesAddSystemSoundCompletion(soundID, NULL, NULL, soundCompleteCallback, NULL);
-    AudioServicesPlaySystemSound(soundID); // 播放音效
+//    NSBundle *f = [NSBundle bundleForClass:[self class]];
+//    
+//    NSString * path = [f pathForResource:@"sound" ofType:@"caf" inDirectory:@"SGQRCode.bundle"];
+//    
+//    NSURL *fileUrl = [NSURL fileURLWithPath:path];
+//    
+//    SystemSoundID soundID = 0;
+//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)(fileUrl), &soundID);
+//    AudioServicesAddSystemSoundCompletion(soundID, NULL, NULL, soundCompleteCallback, NULL);
+//    AudioServicesPlaySystemSound(soundID); // 播放音效
 }
 void soundCompleteCallback(SystemSoundID soundID, void *clientData){
 
